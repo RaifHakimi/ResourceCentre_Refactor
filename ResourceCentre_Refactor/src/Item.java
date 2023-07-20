@@ -23,6 +23,17 @@ public class Item {
 		return itemInfo;
 		//return null;
 	}
+	
+	public String showAvailability(boolean isAvailable) {
+		String avail;
+
+		if (isAvailable == true) {
+			avail = "Yes";
+		} else {
+			avail = "No";
+		}
+		return avail;
+	}
 	public String getAssetTag() {
 		return assetTag;
 	}
